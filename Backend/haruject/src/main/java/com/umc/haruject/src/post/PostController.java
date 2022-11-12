@@ -27,11 +27,10 @@ public class PostController {
     }
 
     @ResponseBody
-    @PostMapping("")
-    public BaseResponse<PostPostRes> createBread(@RequestBody PostPostReq postPostReq) {
+    @PostMapping("/post")
+    public BaseResponse<PostPostRes> createPost(@RequestBody PostPostReq postPostReq) {
         try{
-            //게시물 본문의 길이가 너무 길 때
-            if(postPostReq.getContent().length() > 450) {
+            if(postPostReq.getContent().length() > 500) {
                 return new BaseResponse<>(BaseResponseStatus.POST_POSTS_INVALID_CONTENTS);
             }
 

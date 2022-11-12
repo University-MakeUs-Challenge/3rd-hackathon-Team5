@@ -13,18 +13,11 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 public class PostPostReq {
     private int userIdx;
+    private int projectIdx;
     private String title;
     private String content;
     private int headCount;
     private String position;
     private String framework;
-
-    private Timestamp time;
-    private String location;
-    private String matchType;
-    private String isOffline;
-    private String projectStatus;
-
-    //DB에 default 설정 해줄 거면 안 해도 됨
     private String matchStatus = "ING"; // 모집중= ING, 모집완료= END
 }
