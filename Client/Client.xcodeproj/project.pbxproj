@@ -72,6 +72,8 @@
 		91A2904A291FDA5300BC6010 /* Client */ = {
 			isa = PBXGroup;
 			children = (
+				91A29092291FFDC300BC6010 /* FirstUserSetting */,
+				91A29091291FFDBB00BC6010 /* Realm */,
 				91A2907C291FE19600BC6010 /* Main */,
 				91A2907B291FE18F00BC6010 /* Extension */,
 				91A2907A291FE18600BC6010 /* Sign */,
@@ -107,8 +109,54 @@
 			isa = PBXGroup;
 			children = (
 				91A2907D291FE1B300BC6010 /* CustomTabBarController.swift */,
+				91A2908C291FFD7100BC6010 /* TabBarComponent */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		91A2908C291FFD7100BC6010 /* TabBarComponent */ = {
+			isa = PBXGroup;
+			children = (
+				91A29090291FFDAE00BC6010 /* Profile */,
+				91A2908F291FFDA300BC6010 /* Schedule */,
+				91A2908D291FFD8600BC6010 /* Home */,
+			);
+			path = TabBarComponent;
+			sourceTree = "<group>";
+		};
+		91A2908D291FFD8600BC6010 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		91A2908F291FFDA300BC6010 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Schedule;
+			sourceTree = "<group>";
+		};
+		91A29090291FFDAE00BC6010 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		91A29091291FFDBB00BC6010 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		91A29092291FFDC300BC6010 /* FirstUserSetting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FirstUserSetting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
