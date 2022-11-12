@@ -1,13 +1,12 @@
 package com.umc.haruject.src.post;
 
-import com.umc3.umc3_demo.config.BaseException;
-import com.umc3.umc3_demo.post.model.PatchSalePostReq;
-import com.umc3.umc3_demo.post.model.PostSalePostReq;
-import com.umc3.umc3_demo.post.model.PostSalePostRes;
+import com.umc.haruject.config.BaseException;
+import com.umc.haruject.src.post.model.PostPostApplyReq;
+import com.umc.haruject.src.post.model.PostPostApplyRes;
 import org.springframework.stereotype.Service;
 
-import static com.umc3.umc3_demo.config.BaseResponseStatus.DATABASE_ERROR;
-import static com.umc3.umc3_demo.config.BaseResponseStatus.MODIFY_FAIL_POST;
+import static com.umc.haruject.config.BaseResponseStatus.*;
+
 
 @Service
 public class PostService {
@@ -19,39 +18,19 @@ public class PostService {
         this.postProvider = postProvider;
     }
 
-    public PostSalePostRes createSalePosts(int userIdx, PostSalePostReq postSalePostReq) throws BaseException{
-        try{
-            int postIdx = postDao.insertSalePosts(userIdx, postSalePostReq.getPostTitle(), postSalePostReq.getCategory(),
-                    postSalePostReq.getPrice(), postSalePostReq.getContent(), postSalePostReq.getPostImgUrl());
-            return new PostSalePostRes(postIdx);
+    public PostPostApplyRes createApplicant(PostPostApplyReq postPostApplyReq) throws BaseException {
+        if (postProvider.checkApplicantUser(postPostApplyReq.getUserIdx()) == 1 && postProvider.checkApplicantPost(postPostApplyReq.getPostIdx())==1) {
+            throw new BaseException(POST_APPLY_EXISTS_USER_AND_POST);
         }
-        catch (Exception exception){
+        try {
+            int applyIdx = postDao.createApplicant(postPostApplyReq);
+            return new PostPostApplyRes(applyIdx);
+
+        } catch (Exception exception) {
+            System.out.println(exception);
             throw new BaseException(DATABASE_ERROR);
         }
     }
 
-    public void deleteSalePost(int postIdx) throws BaseException{
-        try{
-            int result = postDao.deleteSalePost(postIdx);
-            if(result == 0){
-                throw new BaseException(MODIFY_FAIL_POST);
-            }
-        } catch (Exception exception){
-            throw new BaseException(DATABASE_ERROR);
-        }
-    }
-
-    public void modifySalePost(int postIdx, PatchSalePostReq patchSalePostReq) throws BaseException{
-        try{
-            int result = postDao.updateSalePost(postIdx, patchSalePostReq.getPostTitle(), patchSalePostReq.getCategory(),
-                    patchSalePostReq.getPrice(), patchSalePostReq.getContent(), patchSalePostReq.getPostImgUrl());
-
-            if (result == 0){
-                throw new BaseException(MODIFY_FAIL_POST);
-            }
-        } catch (Exception exception){
-            throw new BaseException(DATABASE_ERROR);
-        }
-    }
 
 }
