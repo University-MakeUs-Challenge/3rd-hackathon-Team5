@@ -31,7 +31,7 @@ class CustomTabBarController: UITabBarController{
         self.tabBar.backgroundColor = .systemBackground
 
         homeVC.title = "Home"
-        ScheduleVC.title = "Subscribe"
+        ScheduleVC.title = "Schedule"
         profileVC.title = "Profile"
 
         let ViewControllers:[UIViewController] = [homeVC,ScheduleVC,profileVC]
