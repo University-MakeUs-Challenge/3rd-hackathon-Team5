@@ -1,5 +1,7 @@
 package com.umc.haruject.src.portfolio;
 
+import com.umc.haruject.config.BaseException;
+import com.umc.haruject.config.BaseResponse;
 import com.umc.haruject.src.portfolio.model.GetPortRes;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -9,6 +11,7 @@ import java.awt.*;
 @RestController
 @RequestMapping("/portfolio")
 public class PortfolioController {
+
     @Autowired
     private final PortfolioProvider portfolioProvider;
 //    @Autowired
@@ -21,15 +24,13 @@ public class PortfolioController {
 
     // 개인 포폴 조회
     @ResponseBody
-    @GetMapping("/userIdx") {
-        public BaseResponse<GetPortRes> getUser(@PathVariable("userIdx") int userIdx) {
-            try {
-                GetPortRes getPortRes = portfolioProvider.getPortfolio(userIdx);
-                return new BaseResponse<>(getPortRes);
-            } catch (BaseException exception) {
-                return new BaseResponse<>((exception.getStatus()));
-            }
-
+    @GetMapping("/userIdx")
+    public BaseResponse<GetPortRes> getUser(@PathVariable("idx") int idx) {
+        try {
+            GetPortRes getPortRes = portfolioProvider.getPortfolio(idx);
+            return new BaseResponse<>(getPortRes);
+        } catch (BaseException exception) {
+            return new BaseResponse<>((exception.getStatus()));
         }
 
     }

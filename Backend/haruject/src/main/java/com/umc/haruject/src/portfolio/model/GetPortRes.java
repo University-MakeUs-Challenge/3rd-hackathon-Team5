@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
+import java.util.Date;
 
 @Getter
 @Setter
@@ -16,17 +17,9 @@ public class GetPortRes {
     private String framework;
     private String info;
 
-    private LocalDateTime createdAt;
-    private LocalDateTime updatedAt;
+    private Date createdAt;
+    private Date updatedAt;
 
     // 나중에 되면 추가할 것
 //    private String status;
-}
-
-
-public class GetUserRes {
-    private int userIdx;
-    private String nickname;
-    private String email;
-    private String password;
 }
