@@ -21,11 +21,7 @@ public enum BaseResponseStatus {
     EMPTY_JWT(false, 2001, "JWT를 입력해주세요."),
     INVALID_JWT(false, 2002, "유효하지 않은 JWT입니다."),
     INVALID_USER_JWT(false,2003,"권한이 없는 유저의 접근입니다."),
-
-
-
-
-
+    POST_POSTS_INVALID_CONTENTS(false, 2004, "게시글의 길이가 너무 깁니다."),
 
 
     /**
