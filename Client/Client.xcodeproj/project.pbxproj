@@ -25,6 +25,7 @@
 		91A29096291FFEBA00BC6010 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A29095291FFEBA00BC6010 /* ScheduleViewController.swift */; };
 		91A29098291FFEC500BC6010 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A29097291FFEC500BC6010 /* ProfileViewController.swift */; };
 		91A2909A2920001600BC6010 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A290992920001600BC6010 /* UIColor+.swift */; };
+		F90ACCCB292038880090FE48 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90ACCCA292038880090FE48 /* ScheduleTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		91A29095291FFEBA00BC6010 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		91A29097291FFEC500BC6010 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		91A290992920001600BC6010 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		F90ACCCA292038880090FE48 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				91A29095291FFEBA00BC6010 /* ScheduleViewController.swift */,
+				F90ACCCA292038880090FE48 /* ScheduleTableViewCell.swift */,
 			);
 			path = Schedule;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91A29082291FE25500BC6010 /* SignUpViewController.swift in Sources */,
+				F90ACCCB292038880090FE48 /* ScheduleTableViewCell.swift in Sources */,
 				91A29050291FDA5300BC6010 /* ViewController.swift in Sources */,
 				91A29084291FE2AF00BC6010 /* UITextField+.swift in Sources */,
 				91A2904C291FDA5300BC6010 /* AppDelegate.swift in Sources */,
