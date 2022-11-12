@@ -6,9 +6,7 @@ import com.umc.haruject.src.post.model.GetPostDetailRes;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-
-import static com.umc.haruject.config.BaseResponseStatus.EMPTY_POST;
+import static com.umc.haruject.config.BaseResponseStatus.EMPTY_USER_OR_POST;
 
 @Service
 public class PostProvider {
@@ -27,7 +25,25 @@ public class PostProvider {
         }
         catch (Exception exception){
             System.out.println(exception);
-            throw new BaseException(EMPTY_POST);
+            throw new BaseException(EMPTY_USER_OR_POST);
+        }
+    }
+
+    public int checkApplicantUser(int userIdx) throws BaseException {
+        try {
+            return postDao.checkApplicantUser(userIdx);
+        } catch (Exception exception) {
+            System.out.println(exception);
+            throw new BaseException(EMPTY_USER_OR_POST);
+        }
+    }
+
+    public int checkApplicantPost(int postIdx) throws BaseException {
+        try {
+            return postDao.checkApplicantPost(postIdx);
+        } catch (Exception exception) {
+            System.out.println(exception);
+            throw new BaseException(EMPTY_USER_OR_POST);
         }
     }
 }

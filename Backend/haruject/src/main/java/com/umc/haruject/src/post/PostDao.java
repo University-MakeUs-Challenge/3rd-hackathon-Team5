@@ -1,6 +1,7 @@
 package com.umc.haruject.src.post;
 
 import com.umc.haruject.src.post.model.GetPostDetailRes;
+import com.umc.haruject.src.post.model.PostPostApplyReq;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
@@ -35,5 +36,29 @@ public class PostDao {
                         rs.getString("isOffline")
                 ),
                 getPostDetailParam);
+    }
+    public int checkApplicantUser(int userIdx) {
+        String checkApplicantQuery = "select exists(select userIdx from applicant where userIdx = ?)";
+        int checkApplicantParams = userIdx;
+        return this.jdbcTemplate.queryForObject(checkApplicantQuery,
+                int.class,
+                checkApplicantParams);
+    }
+
+    public int checkApplicantPost(int postIdx) {
+        String checkApplicantQuery = "select exists(select postIdx from applicant where postIdx = ?)";
+        int checkApplicantParams = postIdx;
+        return this.jdbcTemplate.queryForObject(checkApplicantQuery,
+                int.class,
+                checkApplicantParams);
+    }
+
+    public int createApplicant(PostPostApplyReq postPostApplyReq) {
+        String createApplicantQuery = "insert into Applicant (matchStatus, userIdx, postIdx) VALUES (?,?,?)";
+        Object[]createApplicantQueryParams = new Object[]{postPostApplyReq.getMatchStatus(), postPostApplyReq.getPostIdx(), postPostApplyReq.getUserIdx()};
+        this.jdbcTemplate.update(createApplicantQuery, createApplicantQueryParams);
+
+        String lastInserIdQuery = "select last_insert_id()";
+        return this.jdbcTemplate.queryForObject(lastInserIdQuery, int.class);
     }
 }
