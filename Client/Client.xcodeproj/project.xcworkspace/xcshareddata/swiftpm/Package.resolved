@@ -1,41 +1,43 @@
 {
-  "pins" : [
-    {
-      "identity" : "realm-core",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/realm/realm-core",
-      "state" : {
-        "revision" : "3c4b86da569368c4ee5ccca2a112d511cc6fa936",
-        "version" : "12.11.0"
+  "object": {
+    "pins": [
+      {
+        "package": "RealmDatabase",
+        "repositoryURL": "https://github.com/realm/realm-core",
+        "state": {
+          "branch": null,
+          "revision": "3c4b86da569368c4ee5ccca2a112d511cc6fa936",
+          "version": "12.11.0"
+        }
+      },
+      {
+        "package": "Realm",
+        "repositoryURL": "https://github.com/realm/realm-swift.git",
+        "state": {
+          "branch": "master",
+          "revision": "66cf2fc246f87c06940e6c3a6dc5908c316fa5d6",
+          "version": null
+        }
+      },
+      {
+        "package": "SnapKit",
+        "repositoryURL": "https://github.com/SnapKit/SnapKit.git",
+        "state": {
+          "branch": "develop",
+          "revision": "58320fe80522414bf3a7e24c88123581dc586752",
+          "version": null
+        }
+      },
+      {
+        "package": "Then",
+        "repositoryURL": "https://github.com/devxoul/Then.git",
+        "state": {
+          "branch": "master",
+          "revision": "d41ef523faef0f911369f79c0b96815d9dbb6d7a",
+          "version": null
+        }
       }
-    },
-    {
-      "identity" : "realm-swift",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/realm/realm-swift.git",
-      "state" : {
-        "branch" : "master",
-        "revision" : "66cf2fc246f87c06940e6c3a6dc5908c316fa5d6"
-      }
-    },
-    {
-      "identity" : "snapkit",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/SnapKit/SnapKit.git",
-      "state" : {
-        "branch" : "develop",
-        "revision" : "58320fe80522414bf3a7e24c88123581dc586752"
-      }
-    },
-    {
-      "identity" : "then",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/devxoul/Then.git",
-      "state" : {
-        "branch" : "master",
-        "revision" : "d41ef523faef0f911369f79c0b96815d9dbb6d7a"
-      }
-    }
-  ],
-  "version" : 2
+    ]
+  },
+  "version": 1
 }
