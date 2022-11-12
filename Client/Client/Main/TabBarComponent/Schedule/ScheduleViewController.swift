@@ -77,13 +77,4 @@ class ScheduleViewController: UIViewController {
            setUpView()
 
        }
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-      
-    }
-    
-
 }
