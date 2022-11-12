@@ -22,6 +22,9 @@ public enum BaseResponseStatus {
     INVALID_JWT(false, 2002, "유효하지 않은 JWT입니다."),
     INVALID_USER_JWT(false,2003,"권한이 없는 유저의 접근입니다."),
 
+    GRADE_IS_EMPTY(false, 2004, "평점을 입력해주세요."),
+    RATE_IS_EMPTY(false, 2005, "평가를 선택해주세요."),
+
 
 
 
@@ -46,7 +49,7 @@ public enum BaseResponseStatus {
     DATABASE_ERROR(false, 4000, "데이터베이스 연결에 실패하였습니다."),
     SERVER_ERROR(false, 4001, "서버와의 연결에 실패하였습니다."),
 
-    POST_ISEMPTY(false, 4002, "불러올 데이터가 없습니다.");
+    POST_IS_EMPTY(false, 4002, "불러올 데이터가 없습니다.");
 
 
 
