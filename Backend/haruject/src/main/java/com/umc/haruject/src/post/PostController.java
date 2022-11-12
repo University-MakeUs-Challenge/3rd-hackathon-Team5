@@ -27,7 +27,7 @@ public class PostController {
     }
 
     @ResponseBody
-    @PostMapping("/post")
+    @PostMapping("")
     public BaseResponse<PostPostRes> createPost(@RequestBody PostPostReq postPostReq) {
         try{
             if(postPostReq.getContent().length() > 500) {

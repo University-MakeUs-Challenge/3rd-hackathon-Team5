@@ -1,14 +1,11 @@
 package com.umc.haruject.src.project;
 
-import com.umc.haruject.src.post.model.PostPostReq;
 import com.umc.haruject.src.project.model.PostProjectReq;
-import com.umc.haruject.src.project.model.test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import javax.sql.DataSource;
-import java.sql.Timestamp;
 
 @Repository
 public class ProjectDao {
@@ -35,15 +32,5 @@ public class ProjectDao {
     }
 
 
-    public int insertTest(test test1) {
-        String nick = test1.getNick();
-        String name = test1.getName();
 
-        String insertQuery = "INSERT INTO Test(nick, name) VALUES (?, ?)";
-        Object[] insertParams = new Object[] {nick, name};
-        this.jdbcTemplate.update(insertQuery, insertParams);
-
-        String lastInsertIdxQuery= "SELECT last_insert_id()";
-        return this.jdbcTemplate.queryForObject(lastInsertIdxQuery, int.class);
-    }
 }
