@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47FFF486292007080022159C /* HomeItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FFF485292007080022159C /* HomeItemCollectionViewCell.swift */; };
 		91A2904C291FDA5300BC6010 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A2904B291FDA5300BC6010 /* AppDelegate.swift */; };
 		91A2904E291FDA5300BC6010 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A2904D291FDA5300BC6010 /* SceneDelegate.swift */; };
 		91A29050291FDA5300BC6010 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A2904F291FDA5300BC6010 /* ViewController.swift */; };
@@ -24,9 +25,11 @@
 		91A29094291FFEAD00BC6010 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A29093291FFEAD00BC6010 /* HomeViewController.swift */; };
 		91A29096291FFEBA00BC6010 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A29095291FFEBA00BC6010 /* ScheduleViewController.swift */; };
 		91A29098291FFEC500BC6010 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A29097291FFEC500BC6010 /* ProfileViewController.swift */; };
+		91A2909A2920001600BC6010 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A290992920001600BC6010 /* UIColor+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47FFF485292007080022159C /* HomeItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		91A29048291FDA5300BC6010 /* Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Client.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91A2904B291FDA5300BC6010 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91A2904D291FDA5300BC6010 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +45,7 @@
 		91A29093291FFEAD00BC6010 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		91A29095291FFEBA00BC6010 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		91A29097291FFEC500BC6010 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		91A290992920001600BC6010 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 			children = (
 				91A29083291FE2AF00BC6010 /* UITextField+.swift */,
 				91A29085291FE2FA00BC6010 /* UIStackView+.swift */,
+				91A290992920001600BC6010 /* UIColor+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -134,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				91A29093291FFEAD00BC6010 /* HomeViewController.swift */,
+				47FFF485292007080022159C /* HomeItemCollectionViewCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -254,12 +260,14 @@
 				91A29084291FE2AF00BC6010 /* UITextField+.swift in Sources */,
 				91A2904C291FDA5300BC6010 /* AppDelegate.swift in Sources */,
 				91A2907E291FE1B300BC6010 /* CustomTabBarController.swift in Sources */,
+				91A2909A2920001600BC6010 /* UIColor+.swift in Sources */,
 				91A29096291FFEBA00BC6010 /* ScheduleViewController.swift in Sources */,
 				91A29098291FFEC500BC6010 /* ProfileViewController.swift in Sources */,
 				91A29094291FFEAD00BC6010 /* HomeViewController.swift in Sources */,
 				91A29080291FE21B00BC6010 /* SignInViewController.swift in Sources */,
 				91A2904E291FDA5300BC6010 /* SceneDelegate.swift in Sources */,
 				91A29086291FE2FA00BC6010 /* UIStackView+.swift in Sources */,
+				47FFF486292007080022159C /* HomeItemCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
