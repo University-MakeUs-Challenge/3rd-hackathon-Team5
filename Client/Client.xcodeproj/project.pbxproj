@@ -21,6 +21,9 @@
 		91A29086291FE2FA00BC6010 /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A29085291FE2FA00BC6010 /* UIStackView+.swift */; };
 		91A29089291FE51200BC6010 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 91A29088291FE51200BC6010 /* Realm */; };
 		91A2908B291FE51200BC6010 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 91A2908A291FE51200BC6010 /* RealmSwift */; };
+		91A29094291FFEAD00BC6010 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A29093291FFEAD00BC6010 /* HomeViewController.swift */; };
+		91A29096291FFEBA00BC6010 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A29095291FFEBA00BC6010 /* ScheduleViewController.swift */; };
+		91A29098291FFEC500BC6010 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A29097291FFEC500BC6010 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		91A29081291FE25500BC6010 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		91A29083291FE2AF00BC6010 /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
 		91A29085291FE2FA00BC6010 /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
+		91A29093291FFEAD00BC6010 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		91A29095291FFEBA00BC6010 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		91A29097291FFEC500BC6010 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +133,7 @@
 		91A2908D291FFD8600BC6010 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				91A29093291FFEAD00BC6010 /* HomeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -134,6 +141,7 @@
 		91A2908F291FFDA300BC6010 /* Schedule */ = {
 			isa = PBXGroup;
 			children = (
+				91A29095291FFEBA00BC6010 /* ScheduleViewController.swift */,
 			);
 			path = Schedule;
 			sourceTree = "<group>";
@@ -141,6 +149,7 @@
 		91A29090291FFDAE00BC6010 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				91A29097291FFEC500BC6010 /* ProfileViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -245,6 +254,9 @@
 				91A29084291FE2AF00BC6010 /* UITextField+.swift in Sources */,
 				91A2904C291FDA5300BC6010 /* AppDelegate.swift in Sources */,
 				91A2907E291FE1B300BC6010 /* CustomTabBarController.swift in Sources */,
+				91A29096291FFEBA00BC6010 /* ScheduleViewController.swift in Sources */,
+				91A29098291FFEC500BC6010 /* ProfileViewController.swift in Sources */,
+				91A29094291FFEAD00BC6010 /* HomeViewController.swift in Sources */,
 				91A29080291FE21B00BC6010 /* SignInViewController.swift in Sources */,
 				91A2904E291FDA5300BC6010 /* SceneDelegate.swift in Sources */,
 				91A29086291FE2FA00BC6010 /* UIStackView+.swift in Sources */,
