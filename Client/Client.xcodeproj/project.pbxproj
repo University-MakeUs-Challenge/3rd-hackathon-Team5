@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		47FFF486292007080022159C /* HomeItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FFF485292007080022159C /* HomeItemCollectionViewCell.swift */; };
+		47FFF492292042FC0022159C /* HomeItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FFF48D292042FC0022159C /* HomeItemCollectionViewCell.swift */; };
+		47FFF493292042FC0022159C /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FFF48E292042FC0022159C /* HomeTableViewCell.swift */; };
+		47FFF494292042FC0022159C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FFF48F292042FC0022159C /* HomeViewController.swift */; };
+		47FFF495292042FC0022159C /* BaseScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FFF490292042FC0022159C /* BaseScrollView.swift */; };
+		47FFF496292042FC0022159C /* HorizontalScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FFF491292042FC0022159C /* HorizontalScrollView.swift */; };
 		91A2904C291FDA5300BC6010 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A2904B291FDA5300BC6010 /* AppDelegate.swift */; };
 		91A2904E291FDA5300BC6010 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A2904D291FDA5300BC6010 /* SceneDelegate.swift */; };
 		91A29050291FDA5300BC6010 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A2904F291FDA5300BC6010 /* ViewController.swift */; };
@@ -22,7 +26,6 @@
 		91A29086291FE2FA00BC6010 /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A29085291FE2FA00BC6010 /* UIStackView+.swift */; };
 		91A29089291FE51200BC6010 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 91A29088291FE51200BC6010 /* Realm */; };
 		91A2908B291FE51200BC6010 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 91A2908A291FE51200BC6010 /* RealmSwift */; };
-		91A29094291FFEAD00BC6010 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A29093291FFEAD00BC6010 /* HomeViewController.swift */; };
 		91A29096291FFEBA00BC6010 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A29095291FFEBA00BC6010 /* ScheduleViewController.swift */; };
 		91A29098291FFEC500BC6010 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A29097291FFEC500BC6010 /* ProfileViewController.swift */; };
 		91A2909A2920001600BC6010 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A290992920001600BC6010 /* UIColor+.swift */; };
@@ -34,7 +37,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		47FFF485292007080022159C /* HomeItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		47FFF48D292042FC0022159C /* HomeItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeItemCollectionViewCell.swift; path = ../../../../../../Client/Main/TabBarComponent/Home/HomeItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		47FFF48E292042FC0022159C /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		47FFF48F292042FC0022159C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../../../../../../Client/Main/TabBarComponent/Home/HomeViewController.swift; sourceTree = "<group>"; };
+		47FFF490292042FC0022159C /* BaseScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseScrollView.swift; sourceTree = "<group>"; };
+		47FFF491292042FC0022159C /* HorizontalScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalScrollView.swift; sourceTree = "<group>"; };
 		91A29048291FDA5300BC6010 /* Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Client.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91A2904B291FDA5300BC6010 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91A2904D291FDA5300BC6010 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,7 +54,6 @@
 		91A29081291FE25500BC6010 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		91A29083291FE2AF00BC6010 /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
 		91A29085291FE2FA00BC6010 /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
-		91A29093291FFEAD00BC6010 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		91A29095291FFEBA00BC6010 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		91A29097291FFEC500BC6010 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		91A290992920001600BC6010 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
@@ -150,8 +156,11 @@
 		91A2908D291FFD8600BC6010 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				91A29093291FFEAD00BC6010 /* HomeViewController.swift */,
-				47FFF485292007080022159C /* HomeItemCollectionViewCell.swift */,
+				47FFF490292042FC0022159C /* BaseScrollView.swift */,
+				47FFF48D292042FC0022159C /* HomeItemCollectionViewCell.swift */,
+				47FFF48E292042FC0022159C /* HomeTableViewCell.swift */,
+				47FFF48F292042FC0022159C /* HomeViewController.swift */,
+				47FFF491292042FC0022159C /* HorizontalScrollView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -306,20 +315,23 @@
 				91A29050291FDA5300BC6010 /* ViewController.swift in Sources */,
 				91A29084291FE2AF00BC6010 /* UITextField+.swift in Sources */,
 				91A2904C291FDA5300BC6010 /* AppDelegate.swift in Sources */,
+				47FFF495292042FC0022159C /* BaseScrollView.swift in Sources */,
 				91A2907E291FE1B300BC6010 /* CustomTabBarController.swift in Sources */,
+				47FFF494292042FC0022159C /* HomeViewController.swift in Sources */,
 				91A2909D292001BB00BC6010 /* WriteViewController.swift in Sources */,
+				47FFF493292042FC0022159C /* HomeTableViewCell.swift in Sources */,
 				91A2909A2920001600BC6010 /* UIColor+.swift in Sources */,
 				91A29096291FFEBA00BC6010 /* ScheduleViewController.swift in Sources */,
+				47FFF496292042FC0022159C /* HorizontalScrollView.swift in Sources */,
 				91A290A32920061100BC6010 /* User.swift in Sources */,
 				91A29098291FFEC500BC6010 /* ProfileViewController.swift in Sources */,
 				91A290B129203E4200BC6010 /* GradeViewController.swift in Sources */,
 				91A290A1292005A200BC6010 /* RealmService.swift in Sources */,
-				91A29094291FFEAD00BC6010 /* HomeViewController.swift in Sources */,
 				91A29080291FE21B00BC6010 /* SignInViewController.swift in Sources */,
 				91A290AF29203E3000BC6010 /* ButtonStackView.swift in Sources */,
 				91A2904E291FDA5300BC6010 /* SceneDelegate.swift in Sources */,
 				91A29086291FE2FA00BC6010 /* UIStackView+.swift in Sources */,
-				47FFF486292007080022159C /* HomeItemCollectionViewCell.swift in Sources */,
+				47FFF492292042FC0022159C /* HomeItemCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
