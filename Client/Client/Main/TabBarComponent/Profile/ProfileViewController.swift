@@ -99,6 +99,27 @@ class ProfileViewController: UIViewController {
     let stackView1 = UIStackView().then {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.axis = .vertical
+        $0.alignment = .fill
+        $0.spacing = 1
+        $0.distribution = .fillEqually
+        
+        $0.backgroundColor = .systemGray3
+        $0.layer.cornerRadius = 20
+    }
+    
+    let dropView = UIView().then {
+        $0.backgroundColor = .white
+    }
+    let logoutView = UIView().then {
+        $0.backgroundColor = .white
+    }
+    let dropLabel = UILabel().then {
+        $0.text = "회원탈퇴"
+        $0.font = .boldSystemFont(ofSize: 15)
+    }
+    let logoutLabel = UILabel().then {
+        $0.text = "로그아웃"
+        $0.font = .boldSystemFont(ofSize: 15)
     }
     
     override func viewDidLoad() {
@@ -133,6 +154,13 @@ class ProfileViewController: UIViewController {
         myTestView.addSubview(myTestLabel)
         myWriteView.addSubview(myWriteLabel)
         myPFView.addSubview(myPFLabel)
+        view.addSubview(stackView1)
+        
+        
+        self.stackView1.addArrangedSubviews([dropView, logoutView])
+        
+        dropView.addSubview(dropLabel)
+        logoutView.addSubview(logoutLabel)
 //        headerView.addSubview(stackView)
 
 //        self.stackView.addArrangedSubviews([myTestView, myWriteView, myPFView])
@@ -216,7 +244,20 @@ class ProfileViewController: UIViewController {
             $0.centerY.equalTo(myPFView.snp.centerY)
             
         }
-        
+        stackView1.snp.makeConstraints({
+            $0.leading.equalTo(view.snp.leading).offset(30)
+            $0.trailing.equalTo(view.snp.trailing).offset(-30)
+            $0.height.equalTo(100)
+            $0.top.equalTo(myPFView.snp.bottom).offset(30)
+        })
+        dropLabel.snp.makeConstraints{
+            $0.centerY.equalTo(dropView.snp.centerY)
+            $0.leading.equalTo(dropView.snp.leading).offset(10)
+        }
+        logoutLabel.snp.makeConstraints {
+            $0.centerY.equalTo(logoutView.snp.centerY)
+            $0.leading.equalTo(logoutView.snp.leading).offset(10)
+        }
 //        stackView.snp.makeConstraints {
 //            $0.leading.equalTo(headerView.snp.leading).offset(30)
 //            $0.trailing.equalTo(headerView.snp.trailing).offset(30)
