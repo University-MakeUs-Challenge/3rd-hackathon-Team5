@@ -1,6 +1,6 @@
 package com.umc.haruject.src.post;
 
-import com.umc3.umc3_demo.post.model.GetSalePostRes;
+import com.umc.haruject.src.post.model.GetPostDetailRes;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
@@ -16,45 +16,24 @@ public class PostDao {
     @Autowired
     public void setDataSource(DataSource dataSource) {this.jdbcTemplate = new JdbcTemplate(dataSource);}
 
-    public List<GetSalePostRes> selectSalePosts(){
-        String selectSalePostsQuery =
-                "SELECT S.postIdx, U.userIdx, U.nickName, S.postTitle, S.price, U.myTown, S.postImgUrl, S.createdAt FROM SalePost S JOIN User U on S.userIdx = U.userIdx WHERE S.status = 'ACTIVE'";
 
-        return this.jdbcTemplate.query(selectSalePostsQuery,
-                (rs, rowNum) -> new GetSalePostRes(
-                        rs.getInt("postIdx"),
-                        rs.getInt("userIdx"),
+    public GetPostDetailRes getPostDetail(int postIdx){
+        String getPostDetailQuery ="select title, content, headCount, position, framework, matchStatus, nickName, time, location, matchType, isOffline from Post, Project, User where User.idx=Post.userIdx and Post.postIdx=Project.idx and postIdx=?";
+        int getPostDetailParam = postIdx;
+        return this.jdbcTemplate.queryForObject(getPostDetailQuery,
+                (rs, rowNum) -> new GetPostDetailRes(
+                        rs.getString("title"),
+                        rs.getString("content"),
+                        rs.getInt("headCount"),
+                        rs.getString("position"),
+                        rs.getString("framework"),
+                        rs.getString("matchStatus"),
                         rs.getString("nickName"),
-                        rs.getString("postTitle"),
-                        rs.getInt("price"),
-                        rs.getString("myTown"),
-                        rs.getString("postImgUrl"),
-                        rs.getString("createdAt")
-                ));
-
+                        rs.getTimestamp("time"),
+                        rs.getString("location"),
+                        rs.getString("matchType"),
+                        rs.getString("isOffline")
+                ),
+                getPostDetailParam);
     }
-    public int insertSalePosts(int userIdx, String postTitle, String category, int price, String content, String postImgUrl){
-        String insertSalePostsQuery = "INSERT INTO SalePost(userIdx, postTitle, category, price, content, postImgUrl) VALUES (?, ?, ?, ?, ?, ?);";
-        Object[] insertSalePostsParams = new Object[]{userIdx, postTitle, category, price, content, postImgUrl};
-        this.jdbcTemplate.update(insertSalePostsQuery, insertSalePostsParams);
-
-        String lastInsertIdxQuery = "select last_insert_id()";
-        return this.jdbcTemplate.queryForObject(lastInsertIdxQuery, int.class);
-    }
-
-    public int deleteSalePost(int postIdx){
-        String deleteSalePostQuery = "UPDATE SalePost SET status = 'DELETED' WHERE postIdx = ?";
-        Object [] deleteSalePostParams = new Object[] {postIdx};
-
-        return this.jdbcTemplate.update(deleteSalePostQuery, deleteSalePostParams);
-    }
-
-    public int updateSalePost(int postIdx, String postTitle, String category, int price, String content, String postImgUrl){
-        String updateSalePostQuery = "UPDATE SalePost SET postTitle=?, category=?, price=?, content=?, postImgUrl=? WHERE postIdx = ?";
-        Object [] updateSalePostParams = new Object[]{
-                postTitle, category, price, content, postImgUrl, postIdx
-        };
-        return this.jdbcTemplate.update(updateSalePostQuery, updateSalePostParams);
-    }
-
 }
