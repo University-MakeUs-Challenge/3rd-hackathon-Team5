@@ -12,6 +12,15 @@
 		91A29050291FDA5300BC6010 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A2904F291FDA5300BC6010 /* ViewController.swift */; };
 		91A29055291FDA5500BC6010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91A29054291FDA5500BC6010 /* Assets.xcassets */; };
 		91A29058291FDA5500BC6010 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91A29056291FDA5500BC6010 /* LaunchScreen.storyboard */; };
+		91A29076291FE13200BC6010 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 91A29075291FE13200BC6010 /* SnapKit */; };
+		91A29079291FE13A00BC6010 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 91A29078291FE13A00BC6010 /* Then */; };
+		91A2907E291FE1B300BC6010 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A2907D291FE1B300BC6010 /* CustomTabBarController.swift */; };
+		91A29080291FE21B00BC6010 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A2907F291FE21B00BC6010 /* SignInViewController.swift */; };
+		91A29082291FE25500BC6010 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A29081291FE25500BC6010 /* SignUpViewController.swift */; };
+		91A29084291FE2AF00BC6010 /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A29083291FE2AF00BC6010 /* UITextField+.swift */; };
+		91A29086291FE2FA00BC6010 /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A29085291FE2FA00BC6010 /* UIStackView+.swift */; };
+		91A29089291FE51200BC6010 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 91A29088291FE51200BC6010 /* Realm */; };
+		91A2908B291FE51200BC6010 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 91A2908A291FE51200BC6010 /* RealmSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +31,11 @@
 		91A29054291FDA5500BC6010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91A29057291FDA5500BC6010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91A29059291FDA5500BC6010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91A2907D291FE1B300BC6010 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		91A2907F291FE21B00BC6010 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		91A29081291FE25500BC6010 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		91A29083291FE2AF00BC6010 /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
+		91A29085291FE2FA00BC6010 /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +43,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91A2908B291FE51200BC6010 /* RealmSwift in Frameworks */,
+				91A29089291FE51200BC6010 /* Realm in Frameworks */,
+				91A29076291FE13200BC6010 /* SnapKit in Frameworks */,
+				91A29079291FE13A00BC6010 /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +72,9 @@
 		91A2904A291FDA5300BC6010 /* Client */ = {
 			isa = PBXGroup;
 			children = (
+				91A2907C291FE19600BC6010 /* Main */,
+				91A2907B291FE18F00BC6010 /* Extension */,
+				91A2907A291FE18600BC6010 /* Sign */,
 				91A2904B291FDA5300BC6010 /* AppDelegate.swift */,
 				91A2904D291FDA5300BC6010 /* SceneDelegate.swift */,
 				91A2904F291FDA5300BC6010 /* ViewController.swift */,
@@ -62,6 +83,32 @@
 				91A29059291FDA5500BC6010 /* Info.plist */,
 			);
 			path = Client;
+			sourceTree = "<group>";
+		};
+		91A2907A291FE18600BC6010 /* Sign */ = {
+			isa = PBXGroup;
+			children = (
+				91A2907F291FE21B00BC6010 /* SignInViewController.swift */,
+				91A29081291FE25500BC6010 /* SignUpViewController.swift */,
+			);
+			path = Sign;
+			sourceTree = "<group>";
+		};
+		91A2907B291FE18F00BC6010 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				91A29083291FE2AF00BC6010 /* UITextField+.swift */,
+				91A29085291FE2FA00BC6010 /* UIStackView+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		91A2907C291FE19600BC6010 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				91A2907D291FE1B300BC6010 /* CustomTabBarController.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,6 +127,12 @@
 			dependencies = (
 			);
 			name = Client;
+			packageProductDependencies = (
+				91A29075291FE13200BC6010 /* SnapKit */,
+				91A29078291FE13A00BC6010 /* Then */,
+				91A29088291FE51200BC6010 /* Realm */,
+				91A2908A291FE51200BC6010 /* RealmSwift */,
+			);
 			productName = Client;
 			productReference = 91A29048291FDA5300BC6010 /* Client.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +161,11 @@
 				Base,
 			);
 			mainGroup = 91A2903F291FDA5300BC6010;
+			packageReferences = (
+				91A29074291FE13200BC6010 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				91A29077291FE13A00BC6010 /* XCRemoteSwiftPackageReference "Then" */,
+				91A29087291FE51100BC6010 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 91A29049291FDA5300BC6010 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -134,9 +192,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91A29082291FE25500BC6010 /* SignUpViewController.swift in Sources */,
 				91A29050291FDA5300BC6010 /* ViewController.swift in Sources */,
+				91A29084291FE2AF00BC6010 /* UITextField+.swift in Sources */,
 				91A2904C291FDA5300BC6010 /* AppDelegate.swift in Sources */,
+				91A2907E291FE1B300BC6010 /* CustomTabBarController.swift in Sources */,
+				91A29080291FE21B00BC6010 /* SignInViewController.swift in Sources */,
 				91A2904E291FDA5300BC6010 /* SceneDelegate.swift in Sources */,
+				91A29086291FE2FA00BC6010 /* UIStackView+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +409,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		91A29074291FE13200BC6010 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		91A29077291FE13A00BC6010 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		91A29087291FE51100BC6010 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		91A29075291FE13200BC6010 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91A29074291FE13200BC6010 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		91A29078291FE13A00BC6010 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91A29077291FE13A00BC6010 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		91A29088291FE51200BC6010 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91A29087291FE51100BC6010 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		91A2908A291FE51200BC6010 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91A29087291FE51100BC6010 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 91A29040291FDA5300BC6010 /* Project object */;
 }
