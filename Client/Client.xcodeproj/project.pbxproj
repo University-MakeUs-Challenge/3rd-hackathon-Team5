@@ -25,6 +25,9 @@
 		91A29096291FFEBA00BC6010 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A29095291FFEBA00BC6010 /* ScheduleViewController.swift */; };
 		91A29098291FFEC500BC6010 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A29097291FFEC500BC6010 /* ProfileViewController.swift */; };
 		91A2909A2920001600BC6010 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A290992920001600BC6010 /* UIColor+.swift */; };
+		91A2909D292001BB00BC6010 /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A2909C292001BB00BC6010 /* WriteViewController.swift */; };
+		91A290A1292005A200BC6010 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A290A0292005A200BC6010 /* RealmService.swift */; };
+		91A290A32920061100BC6010 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A290A22920061100BC6010 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		91A29095291FFEBA00BC6010 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
 		91A29097291FFEC500BC6010 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		91A290992920001600BC6010 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		91A2909C292001BB00BC6010 /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
+		91A290A0292005A200BC6010 /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
+		91A290A22920061100BC6010 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,7 @@
 		91A2904A291FDA5300BC6010 /* Client */ = {
 			isa = PBXGroup;
 			children = (
+				91A2909B292001A000BC6010 /* WritePage */,
 				91A29092291FFDC300BC6010 /* FirstUserSetting */,
 				91A29091291FFDBB00BC6010 /* Realm */,
 				91A2907C291FE19600BC6010 /* Main */,
@@ -160,6 +167,8 @@
 		91A29091291FFDBB00BC6010 /* Realm */ = {
 			isa = PBXGroup;
 			children = (
+				91A290A22920061100BC6010 /* User.swift */,
+				91A290A0292005A200BC6010 /* RealmService.swift */,
 			);
 			path = Realm;
 			sourceTree = "<group>";
@@ -169,6 +178,22 @@
 			children = (
 			);
 			path = FirstUserSetting;
+			sourceTree = "<group>";
+		};
+		91A2909B292001A000BC6010 /* WritePage */ = {
+			isa = PBXGroup;
+			children = (
+				91A2909C292001BB00BC6010 /* WriteViewController.swift */,
+				91A2909F2920045200BC6010 /* View */,
+			);
+			path = WritePage;
+			sourceTree = "<group>";
+		};
+		91A2909F2920045200BC6010 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,9 +282,12 @@
 				91A29084291FE2AF00BC6010 /* UITextField+.swift in Sources */,
 				91A2904C291FDA5300BC6010 /* AppDelegate.swift in Sources */,
 				91A2907E291FE1B300BC6010 /* CustomTabBarController.swift in Sources */,
+				91A2909D292001BB00BC6010 /* WriteViewController.swift in Sources */,
 				91A2909A2920001600BC6010 /* UIColor+.swift in Sources */,
 				91A29096291FFEBA00BC6010 /* ScheduleViewController.swift in Sources */,
+				91A290A32920061100BC6010 /* User.swift in Sources */,
 				91A29098291FFEC500BC6010 /* ProfileViewController.swift in Sources */,
+				91A290A1292005A200BC6010 /* RealmService.swift in Sources */,
 				91A29094291FFEAD00BC6010 /* HomeViewController.swift in Sources */,
 				91A29080291FE21B00BC6010 /* SignInViewController.swift in Sources */,
 				91A2904E291FDA5300BC6010 /* SceneDelegate.swift in Sources */,
