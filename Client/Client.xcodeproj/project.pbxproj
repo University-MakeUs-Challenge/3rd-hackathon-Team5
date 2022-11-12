@@ -28,6 +28,8 @@
 		91A2909D292001BB00BC6010 /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A2909C292001BB00BC6010 /* WriteViewController.swift */; };
 		91A290A1292005A200BC6010 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A290A0292005A200BC6010 /* RealmService.swift */; };
 		91A290A32920061100BC6010 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A290A22920061100BC6010 /* User.swift */; };
+		91A290A62920097700BC6010 /* GradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A290A52920097700BC6010 /* GradeViewController.swift */; };
+		91A290AC29200AF000BC6010 /* ButtonStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A290AB29200AF000BC6010 /* ButtonStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		91A2909C292001BB00BC6010 /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
 		91A290A0292005A200BC6010 /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
 		91A290A22920061100BC6010 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		91A290A52920097700BC6010 /* GradeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeViewController.swift; sourceTree = "<group>"; };
+		91A290AB29200AF000BC6010 /* ButtonStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 		91A2904A291FDA5300BC6010 /* Client */ = {
 			isa = PBXGroup;
 			children = (
+				91A290A42920095B00BC6010 /* Grade */,
 				91A2909B292001A000BC6010 /* WritePage */,
 				91A29092291FFDC300BC6010 /* FirstUserSetting */,
 				91A29091291FFDBB00BC6010 /* Realm */,
@@ -196,6 +201,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		91A290A42920095B00BC6010 /* Grade */ = {
+			isa = PBXGroup;
+			children = (
+				91A290A52920097700BC6010 /* GradeViewController.swift */,
+				91A290A72920097D00BC6010 /* View */,
+			);
+			path = Grade;
+			sourceTree = "<group>";
+		};
+		91A290A72920097D00BC6010 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				91A290AB29200AF000BC6010 /* ButtonStackView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -283,6 +305,7 @@
 				91A2904C291FDA5300BC6010 /* AppDelegate.swift in Sources */,
 				91A2907E291FE1B300BC6010 /* CustomTabBarController.swift in Sources */,
 				91A2909D292001BB00BC6010 /* WriteViewController.swift in Sources */,
+				91A290A62920097700BC6010 /* GradeViewController.swift in Sources */,
 				91A2909A2920001600BC6010 /* UIColor+.swift in Sources */,
 				91A29096291FFEBA00BC6010 /* ScheduleViewController.swift in Sources */,
 				91A290A32920061100BC6010 /* User.swift in Sources */,
@@ -290,6 +313,7 @@
 				91A290A1292005A200BC6010 /* RealmService.swift in Sources */,
 				91A29094291FFEAD00BC6010 /* HomeViewController.swift in Sources */,
 				91A29080291FE21B00BC6010 /* SignInViewController.swift in Sources */,
+				91A290AC29200AF000BC6010 /* ButtonStackView.swift in Sources */,
 				91A2904E291FDA5300BC6010 /* SceneDelegate.swift in Sources */,
 				91A29086291FE2FA00BC6010 /* UIStackView+.swift in Sources */,
 			);
